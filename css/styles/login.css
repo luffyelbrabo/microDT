@@ -1,0 +1,185 @@
+.containerLogin{
+    background: var(--background);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+     "login login login"
+     "register register register";
+}
+
+.login{
+    grid-area: login;
+    height: 85vh;
+    width:100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+.login .logo{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.login button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 80%;
+    background: var(--background);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    @media screen  and (max-height: 520px) {
+        .login .form .formInput {
+            top: -20px; 
+            height: 30%;
+            width: 100%;
+            transition: top 0.3s ease; 
+        }
+        .logo{
+            top: 15%;
+        }
+        .register{
+            height: 16vh;
+        }
+        
+    
+        .login .form .formInput input:focus {
+            position: absolute;
+            top: -90px; 
+            border-radius: 13px;
+            background: #333;
+        }
+        .login .form .formInput #username:focus {
+            position: absolute;
+            top: -180px; 
+            border-radius: 13px;
+            background: #333;
+        }
+        .login .form .formInput #password:focus {
+            position: absolute;
+            top: -260px; 
+            border-radius: 13px;
+            background: #333;
+    
+        }
+    }
+    cursor: pointer;
+}
+
+
+.login .form{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 67%;
+    width: 80%;
+    background: var(--background);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+
+
+.login .form .formInput{
+    position: relative;
+    top: -20px;
+    height: 30%;
+    width: 100%;
+}
+
+.login .form .title{
+    position: relative;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.login .form .input{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7B1415;
+}
+
+.login .form .input input{
+    height: 100%;
+    width: 85%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.register{
+    grid-area: register;
+    height: 13vh;
+    top: 87%;
+    position: fixed;
+    width:100vw;
+    overflow-x: hidden;
+}
+.register .title{
+    position: absolute;
+    font-size: 15px;
+    left: 23%;
+    top: 5%;
+    font-size: 2opx;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.register .grupe{
+    top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    height: 90px;
+    width: 100vw;
+}
+
+.grupe button{
+    height: 40px;
+    width: 40%;
+    background: var(--buttondark);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+

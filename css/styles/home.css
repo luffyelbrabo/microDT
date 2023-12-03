@@ -1,1 +1,310 @@
+.homeContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "menu menu menu";
+    width: 100vw;
+    height: 100vh;
+}
 
+.navConteiner {
+    grid-area: nav;
+    background-color: red;
+    height: 80px;
+    position: relative;
+}
+
+.mainContainer {
+    grid-area: main;
+    background-color: blue;
+    position: fixed;
+    top: 10vh;
+    height: 80vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+
+.menuConteiner {
+    grid-area: menu;
+    top: 84vh;
+    width:100vw;
+    position: fixed;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+}
+
+.navInput {
+    position: absolute;
+    top: 50%;
+    left: 42.5%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navInput input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    position: relative;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.navInput input::placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navInput img {
+    width: 10%;
+    height: 90%;
+    position: relative;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+.navPerfil {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    border: none;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 70%;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navPerfil img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    
+
+}
+
+.mainCard {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    overflow: hidden;
+    height: 35%;
+    background-color: #7B1415;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+@media screen and (max-height: 519px) {
+    .mainCard {
+        height: 33%;
+    }
+    .mainCardEnderecoText{
+        top: 57%;
+    }
+    .mainContainer {
+        top: 17.5vh;
+        height: 82vh;
+    }
+    .menuConteiner{
+        top: 88.5vh;
+    }
+}
+@media screen and (min-height: 520px) {
+    .mainCard {
+        height: 20%;
+    }
+    .mainCardEnderecoText{
+        top: 50%;
+    }
+    .mainContainer {
+        top: 9.5vh;
+        height: 83.5vh;
+    }
+    .menuConteiner{
+        top: 84.5vh;
+    }
+}
+.mainCardImg {
+    width: 25%;
+    height: 60%;
+    position: relative;
+}
+
+.mainCardImg img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.mainCardEndereco {
+    width: 50%;
+    height: 60%;
+    position: relative;
+}
+
+.mainCardEnderecoTitle {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCardEnderecoTitle h1 {
+    font-size: 1.3rem;
+    position: relative;
+
+}
+
+.mainCardEnderecoText {
+    width: 100%;
+    height: 80%;
+    gap: 4px;
+    position: relative;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainCardEnderecoText p {
+    background: #333;
+    color: white;
+}
+
+.mainCardCashBack {
+    width: 20%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.menuItem {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+}
+.perfil {
+    width: 70%;
+    height: 100vh; 
+    left: 30%;
+    top: 0;
+    position: fixed;
+    z-index: 333;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+.cardName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.cardName img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.fotoPerfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoPerfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.cardSaldo {
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.cardToken {
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.dadosPessoal, .sobre, .sair {
+    padding: 0 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.dadosPessoal button, .sobre button, .sair button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+.fundo{
+    display: none;
+    width: 48%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 3;
+}
