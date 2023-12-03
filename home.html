@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="homeContainer">
+        <div class="navConteiner">
+            <div class="navInput">
+                <input type="text" placeholder="pesquisar">
+                <img src="./css/imgs/lupa.svg" alt="">
+            </div>
+            <button class="navPerfil">
+                <img src="./css/imgs/logo.jpg" alt="">
+            </button>
+        </div>
+        <div class="mainContainer">
+
+        </div>
+        <div class="menuConteiner">
+            <div class="menuItem">
+                <img src="./css/imgs/home.svg" alt="">
+                <p>Home</p>
+            </div>
+
+            <div class="menuItem">
+                <img src="./css/imgs/value.svg" alt="">
+                <p>Cashback</p>
+            </div>
+
+            <div class="menuItem">
+                <img src="./css/imgs/key.svg" alt="">
+                <p>Token</p>
+            </div>
+        </div>
+    </div>
+    <div class="fundo"></div>
+    <div class="perfil">
+        <div class="cardName">
+            <p>Fabricio O. Sampaio </p>
+            <div class="fotoPerfil">
+                <img src="./css/imgs/logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="cardSaldo">
+            <p>Saldo: R$ 0,00</p>
+        </div>
+        <div class="cardToken">
+            <p>Token: 0</p>
+        </div>
+        <div class="dadosPessoal">
+            <p>Dados pessoais</p>
+            <button>Ver dados</button>
+            <button>Editar dados</button>
+        </div>
+        <div class="sobre">
+            <p>Sobre</p>
+            <button>Termos</button>
+            <button>Contrato de serviço</button>
+        </div>
+        <div class="sair">
+            <button>Sair</button>
+        </div>
+    </div>
+</body>
+
+<script src="./js/main.js"></script>
+<script>
+   const home = new Home();
+   const valor = home.Cards(15);
+
+    for (let i = 0; i < valor; i++) {
+        new Home(i);
+    }
+    home.activePerfil(".navPerfil")
+
+</script>
+
+</html>

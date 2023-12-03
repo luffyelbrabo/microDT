@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conveniar-se</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="RegisterCompany-1">
+        <div class="bar-1">
+            <div id="Company"  class="status">
+            </div>
+            <div id="name"></div>
+            <div id="text"></div>
+        </div>
+        <div class="Infos-1 ">
+                <input-s type="text" text="Nome de Usúario" url="./css/imgs/user.svg" exemplo="MasterDigital"></input-s>
+                <input-s type="email" text="E-mail" url="./css/imgs/E-mail.svg" exemplo="exemplo@mail.com"></input-s>
+                <input-s type="password" text="Senha" url="./css/imgs/key.svg" exemplo="********"></input-s>
+                <input-s type="password" text="Confirmar Senha" url="./css/imgs/key.svg" exemplo="********"></input-s>
+            
+        <div class="bottons"> 
+            <div class="grupe company">
+             <button id="back-2">Voltar</button>
+             <button id="naxt-3">Proximo</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/main.js"></script>
+<script src="./js/compnents.js"></script>
+<script>
+    const status = new Status();
+    status.company("#Company",4);
+    status.name("#name",'RedMaster');
+    status.description("#text","Credenciamento de usuário");
+    status.Next("#naxt-3","#back-2","./registerCompany2.html","./login.html");
+</script>
+</html>

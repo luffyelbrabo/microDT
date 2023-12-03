@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conveniar-se</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="RegisterCompany-1">
+        <div class="bar-1">
+            <div id="Company"  class="status">
+            </div>
+            <div id="name"></div>
+            <div id="text"></div>
+        </div>
+        <div class="Infos-1 ">
+            <input-s type="text" text="Nome" url="./css/imgs/infos.svg" exemplo="Fernando"></input-s>
+            <input-s type="text" text="Sobrenome" url="./css/imgs/infos.svg" exemplo="Sampaio"></input-s>
+            <input-s type="telefone" text="Telefone" url="./css/imgs/cell.svg" exemplo="(00) 9 9999 - 9999"></input-s>
+            <input-s type="telefone" text="Whatsapp" url="./css/imgs/zap.svg" exemplo="(00) 9 9999 - 9999"></input-s>
+            <div class="gropForm">
+                <div class="btns"><p>Data</p>
+                    <div class="ct-buttons">
+                    <span><img src="./css/imgs/date.svg" height="25px" width="25px"></span>
+                        <button id="estados">- - - - </button>
+                    </div>
+                </div>
+                <div class="btns"><p>Sexo</p>
+                    <div class="ct-buttons">
+                    <span><img src="./css/imgs/sexy.svg" height="25px" width="25px"></span>
+                        <button id="estados">- - - - </button>
+                    </div>
+                </div>
+            </div>
+            <input-s type="text" text="CPF" url="./css/imgs/number.svg" exemplo="999.999.999-99"></input-s>
+            <input-s type="text" text="RG" url="./css/imgs/number.svg" exemplo="300.743.700-0"></input-s>
+            <input-s type="text" text="Rua" url="./css/imgs/rua.svg" exemplo="Pindorama"></input-s>
+           <div class="gropForm">
+                <input-s type="text" w="50vw" p="" text="Bairro" url="./css/imgs/map.svg" exemplo="São Bento"></input-s>
+                <input-s type="text" w="35vw" p="" text="Número" url="./css/imgs/flag.svg" exemplo="777"></input-s>    
+            </div>
+            <input-s type="text" text="Cidade" url="./css/imgs/city.svg" exemplo="Sidrolandia"></input-s>
+            <div class="btns"><p>Estado</p>
+                <div class="ct-buttons">
+                <span><img src="./css/imgs/flag.svg" height="25px" width="25px"></span>
+                    <button id="estados">MS</button>
+                </div>
+            </div>
+        <div class="bottons"> 
+            <div class="grupe company">
+             <button id="back-2">Voltar</button>
+             <button id="naxt-3">Proximo</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/main.js"></script>
+<script src="./js/compnents.js"></script>
+<script>
+    const status = new Status();
+    status.company("#Company",3);
+    status.name("#name",'RedMaster');
+    status.description("#text","Credenciamento de usuário");
+    status.Next("#naxt-3","#back-2","./registerCompany1.html","./registerCompany3.html");
+</script>
+</html>
